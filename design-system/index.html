@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KodNest Premium Build System - Design System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <header class="top-bar">
+        <div class="top-bar__left">
+            <span class="project-name">KodNest Premium Build System</span>
+        </div>
+        <div class="top-bar__center">
+            <span class="progress-indicator">Design System Reference</span>
+        </div>
+        <div class="top-bar__right">
+            <span class="status-badge status-badge--shipped">Reference</span>
+        </div>
+    </header>
+
+    <!-- Context Header -->
+    <section class="context-header">
+        <h1 class="context-header__title">Design System Components</h1>
+        <p class="context-header__subtitle">A comprehensive reference of all design tokens, components, and patterns</p>
+    </section>
+
+    <!-- Main Layout -->
+    <div class="main-layout">
+        <!-- Primary Workspace -->
+        <main class="primary-workspace">
+            <!-- Color System -->
+            <div class="card">
+                <h2 class="section-title">Color System</h2>
+                <div class="color-grid">
+                    <div class="color-swatch">
+                        <div class="color-swatch__preview" style="background: #F7F6F3;"></div>
+                        <div class="color-swatch__label">Background</div>
+                        <div class="color-swatch__value">#F7F6F3</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch__preview" style="background: #111111;"></div>
+                        <div class="color-swatch__label">Primary Text</div>
+                        <div class="color-swatch__value">#111111</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch__preview" style="background: #8B0000;"></div>
+                        <div class="color-swatch__label">Accent</div>
+                        <div class="color-swatch__value">#8B0000</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-swatch__preview" style="background: #2D5016;"></div>
+                        <div class="color-swatch__label">Success</div>
+                        <div class="color-swatch__value">#2D5016</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typography -->
+            <div class="card">
+                <h2 class="section-title">Typography</h2>
+                <div class="typography-samples">
+                    <div class="typography-sample">
+                        <h1 style="margin: 0;">Heading Level 1</h1>
+                        <p class="typography-meta">Crimson Pro, 48px, 600 weight</p>
+                    </div>
+                    <div class="typography-sample">
+                        <h2 style="margin: 0;">Heading Level 2</h2>
+                        <p class="typography-meta">Crimson Pro, 32px, 600 weight</p>
+                    </div>
+                    <div class="typography-sample">
+                        <h3 style="margin: 0;">Heading Level 3</h3>
+                        <p class="typography-meta">Crimson Pro, 24px, 600 weight</p>
+                    </div>
+                    <div class="typography-sample">
+                        <p style="margin: 0;">Body text demonstrates our clean sans-serif typeface with generous line height and comfortable reading width. This ensures optimal readability and a professional appearance.</p>
+                        <p class="typography-meta">Inter, 16px, 400 weight, 1.7 line-height</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spacing System -->
+            <div class="card">
+                <h2 class="section-title">Spacing System</h2>
+                <div class="spacing-samples">
+                    <div class="spacing-sample">
+                        <div class="spacing-bar" style="width: 8px;"></div>
+                        <span>8px</span>
+                    </div>
+                    <div class="spacing-sample">
+                        <div class="spacing-bar" style="width: 16px;"></div>
+                        <span>16px</span>
+                    </div>
+                    <div class="spacing-sample">
+                        <div class="spacing-bar" style="width: 24px;"></div>
+                        <span>24px</span>
+                    </div>
+                    <div class="spacing-sample">
+                        <div class="spacing-bar" style="width: 40px;"></div>
+                        <span>40px</span>
+                    </div>
+                    <div class="spacing-sample">
+                        <div class="spacing-bar" style="width: 64px;"></div>
+                        <span>64px</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="card">
+                <h2 class="section-title">Buttons</h2>
+                <div class="button-samples">
+                    <button class="btn btn--primary">Primary Button</button>
+                    <button class="btn btn--secondary">Secondary Button</button>
+                    <button class="btn btn--primary" disabled>Disabled Button</button>
+                </div>
+            </div>
+
+            <!-- Form Elements -->
+            <div class="card">
+                <h2 class="section-title">Form Elements</h2>
+                <div class="form-samples">
+                    <div class="form-group">
+                        <label class="form-label">Input Label</label>
+                        <input type="text" class="form-input" placeholder="Enter text here">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Textarea Label</label>
+                        <textarea class="form-input" rows="4" placeholder="Enter longer text here"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Select Label</label>
+                        <select class="form-input">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Status Badges -->
+            <div class="card">
+                <h2 class="section-title">Status Badges</h2>
+                <div class="badge-samples">
+                    <span class="status-badge status-badge--not-started">Not Started</span>
+                    <span class="status-badge status-badge--in-progress">In Progress</span>
+                    <span class="status-badge status-badge--shipped">Shipped</span>
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="card">
+                <h2 class="section-title">Card Component</h2>
+                <p>This is an example of the card component. Cards use subtle borders, balanced padding, and no drop shadows. They provide clear visual separation without visual noise.</p>
+            </div>
+
+            <!-- Empty State -->
+            <div class="card">
+                <h2 class="section-title">Empty State</h2>
+                <div class="empty-state">
+                    <p class="empty-state__message">No items to display yet</p>
+                    <button class="btn btn--primary">Create Your First Item</button>
+                </div>
+            </div>
+
+            <!-- Error State -->
+            <div class="card">
+                <h2 class="section-title">Error State</h2>
+                <div class="error-state">
+                    <p class="error-state__title">Unable to load data</p>
+                    <p class="error-state__message">The server connection timed out. Check your internet connection and try again.</p>
+                    <button class="btn btn--secondary">Retry</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Secondary Panel -->
+        <aside class="secondary-panel">
+            <div class="panel-section">
+                <h3 class="panel-title">Design Principles</h3>
+                <p class="panel-text">This design system embodies calm, intentional, and coherent design. Every element serves a purpose without visual noise.</p>
+            </div>
+
+            <div class="panel-section">
+                <h3 class="panel-title">Implementation Notes</h3>
+                <div class="prompt-box">
+                    <code>/* Use consistent spacing */
+spacing: 8, 16, 24, 40, 64px
+
+/* Color palette */
+background: #F7F6F3
+text: #111111
+accent: #8B0000
+success: #2D5016</code>
+                </div>
+            </div>
+
+            <div class="panel-section">
+                <div class="panel-actions">
+                    <button class="btn btn--secondary btn--small">Copy Code</button>
+                    <button class="btn btn--secondary btn--small">Export Tokens</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Proof Footer -->
+    <footer class="proof-footer">
+        <div class="proof-checklist">
+            <label class="proof-item">
+                <input type="checkbox" class="proof-checkbox">
+                <span>Design System Created</span>
+            </label>
+            <label class="proof-item">
+                <input type="checkbox" class="proof-checkbox">
+                <span>Components Documented</span>
+            </label>
+            <label class="proof-item">
+                <input type="checkbox" class="proof-checkbox">
+                <span>Tokens Defined</span>
+            </label>
+            <label class="proof-item">
+                <input type="checkbox" class="proof-checkbox">
+                <span>Ready for Implementation</span>
+            </label>
+        </div>
+    </footer>
+</body>
+</html>
